@@ -6,11 +6,10 @@ A module that define the asynchrone function wait_random.
 
 
 import asyncio
-from typing import Union
 from random import uniform
 
 
-async def wait_random(max_delay: Union[int, float] = 10):
+async def wait_random(max_delay: int = 10) -> float:
     '''
     an asynchronous coroutine that takes in an integer argument.
     '''
