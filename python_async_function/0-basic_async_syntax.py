@@ -6,7 +6,7 @@ A module that define the asynchrone function wait_random.
 
 
 import asyncio
-from random import uniform
+import random
 
 
 async def wait_random(max_delay: int = 10) -> float:
@@ -17,6 +17,6 @@ async def wait_random(max_delay: int = 10) -> float:
 
     returns the waiting time of the coroutine.
     '''
-    waiting_time = uniform(0, max_delay)
+    waiting_time = random.uniform(0, max_delay)
     await asyncio.sleep(waiting_time)
     return(waiting_time)
