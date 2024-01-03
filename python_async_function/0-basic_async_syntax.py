@@ -11,7 +11,11 @@ from random import uniform
 
 async def wait_random(max_delay: int = 10) -> float:
     '''
-    an asynchronous coroutine that takes in an integer argument.
+    An asynchronous coroutine that takes in an integer argument.
+
+    Takes an integer as argument (default value is 10)
+
+    returns the waiting time of the coroutine.
     '''
     waiting_time = uniform(0, max_delay)
     await asyncio.sleep(waiting_time)
