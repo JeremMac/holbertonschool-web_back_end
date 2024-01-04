@@ -8,9 +8,10 @@ A module that defines the async_generator async function.
 
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator():
+async def async_generator() -> Generator[int, None, None]:
     '''
     A function that loops ten times asynchronously
     waits for one second then yield  random
