@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 '''
-A module that define
+A module that define the update_topics function.
 '''
 
 
