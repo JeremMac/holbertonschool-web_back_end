@@ -47,8 +47,10 @@ class Server:
 
         Returns: a dictionary.
         '''
-        assert index is None or (isinstance(index, int) and index >= 0), "Invalid index value"
-        assert isinstance(page_size, int) and page_size > 0, "Invalid page_size value"
+        assert index is None or\
+            (isinstance(index, int) and index >= 0), "Invalid index value"
+        assert isinstance(page_size, int) and page_size\
+            > 0, "Invalid page_size value"
 
         data = self.indexed_dataset()
 
@@ -59,7 +61,8 @@ class Server:
             start_index = 0
 
         end_index = start_index + page_size
-        result_page = [data[i] for i in range(start_index, min(end_index, len(data)))]
+        result_page = [data[i] for i in
+                       range(start_index, min(end_index, len(data)))]
 
         next_index = end_index if end_index < len(data) else None
 
