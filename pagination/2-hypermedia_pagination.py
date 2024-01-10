@@ -73,7 +73,7 @@ class Server:
         total_pages = len(self.dataset()) // page_size
 
         if page < 1:
-            prev_page = page + 1
+            next_page = page + 1
 
         if page > 1:
             prev_page = page - 1
