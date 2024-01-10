@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 '''
+A module that define index_function
+and contains Server class.
 '''
 
 
