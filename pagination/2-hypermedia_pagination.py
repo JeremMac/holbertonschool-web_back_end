@@ -62,7 +62,7 @@ class Server:
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         '''
-        a get_hyper method that takes the same arguments 
+        a get_hyper method that takes the same arguments
         (and defaults) as get_page and returns a dictionary.
 
         Return: a dictionary.
@@ -79,7 +79,7 @@ class Server:
             prev_page = page - 1
 
         return {
-            'page_size' : page_size,
+            'page_size': page_size,
             'page': page,
             'data': data,
             'next_page': next_page,
