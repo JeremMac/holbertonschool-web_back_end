@@ -1,5 +1,5 @@
 export default function updateUniqueItems(MyMap) {
-  if (!MyMap) {
+  if (typeof MyMap !== 'object') {
     throw new Error('Cannot process');
   }
   for (const [key, value] of MyMap) {
